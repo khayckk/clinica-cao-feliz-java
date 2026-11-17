@@ -1,8 +1,11 @@
+package model;
+
 public class Pet {
     private int id;
     private String nome;
     private String especie;
     private int idade;
+    private String raca;
     private int tutor_id;
 
     public Pet() {
@@ -61,4 +64,13 @@ public class Pet {
     public void setTutor_id(int tutor_id) {
         this.tutor_id = tutor_id;
     }
+
+    public void setRaca(String raca) {
+        this.raca = raca;
+    }
+
+    public String getRaca() {
+        return raca;
+    }
+
 }

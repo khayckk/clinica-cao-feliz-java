@@ -11,7 +11,7 @@ public class Main {
 
         System.out.println("Digite uma opção: ");
         System.out.println("1 - Cadastrar Pet ");
-        System.out.println("2 - Cadastrar Pessoa ");
+        System.out.println("2 - Listar pets ");
         System.out.println("3 - Sair ");
         int opcao = scanner.nextInt();
         scanner.nextLine();
@@ -28,14 +28,13 @@ public class Main {
                 System.out.println("Digite a raça do seu pet: ");
                 pet.setRaca(scanner.nextLine());
 
+                petDAO.salvar(pet);
+
                 break;
 
             case 2:
-                System.out.println("--- CADASTRO DO CLIENTE ---");
-                System.out.println("Digite seu nome: ");
-                System.out.println("Digite seu CPF: ");
-                System.out.println("Digite seu telefone: ");
-                System.out.println("Digite seu endereço: ");
+                System.out.println("--- LISTA DE PETS ---");
+
                 break;
 
             case 3:
